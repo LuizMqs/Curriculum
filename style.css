@@ -6,7 +6,7 @@
 
 /*Definindo um background para a página*/
 body {
-    background-image: "./images/backgroud.jpg";
+    background-image: url("./images/backgroud.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -37,7 +37,7 @@ header span {
 
 /*Foto de perfil*/
 .perfil {
-    background-image: "./images/perfil.png";
+    background-image: url("./images/perfil.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 30vh;
@@ -94,7 +94,7 @@ header span {
 
 /*Background de livros*/
 .contain {
-    background-image: "./images/livros.jpg";
+    background-image: url("./images/livros.jpg");
     display: flex;
     justify-content: center;
     align-items: center;
