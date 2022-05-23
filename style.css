@@ -264,7 +264,7 @@ header span {
         border-left: 5px solid black;
         padding-left: 3vw;
     }
-    
+
 
     .contain {
         height: fit-content;
@@ -332,8 +332,5 @@ header span {
         flex-wrap: wrap;
         flex-direction: column;
     }
-   
-
-
 
 }
