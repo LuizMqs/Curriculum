@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+/*Definindo um background para a página*/
+body {
+    background-image: url(/images/backgroud.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/*header contendo meu nome*/
+header {
+    width: 99vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Defindo a cor e tamanho do nome*/
+header h1 {
+    color: white;
+    font-size: 60px;
+}
+
+/*Defindo a cor e tamanho do cargo*/
+header span {
+    color: rgb(121, 134, 133);
+    font-size: 30px;
+}
+
+/*Foto de perfil*/
+.perfil {
+    background-image: url(/images/perfil.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30vh;
+    height: 30vh;
+    border-radius: 50%;
+    border: 10px solid rgb(174, 174, 174);
+    position: absolute;
+    top: 55vh;
+    left: calc(50% - 15vh);
+}
+
+/*Container Quem sou*/
+.quem {
+    background-color: rgb(174, 174, 174);
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    padding-left: 18vw;
+    padding-right: 18vw;
+    padding-top: 10vw;
+}
+
+/*caixas do contendo um pouco da história*/
+.quem-box {
+    width: 50%;
+    height: fit-content;
+    margin: 3vw;
+    text-align: justify;
+    flex-wrap: wrap;
+}
+
+/*Definindo uma borda apenas na primeira caixa*/
+.quem .quem-box:first-child {
+    border-left: 5px solid black;
+    padding-left: 3vw;
+}
+
+/*Título do container*/
+.quem-box div {
+    font-size: 33px;
+    width: fit-content;
+    height: 15vh;
+    display: flex;
+}
+
+/*Defindo efeitos para os ícones*/
+.quem-box div a svg:hover {
+    fill: white;
+    width: 45px;
+    height: 45px;
+    margin-top: -4.8px;
+    transition: 0.1s;
+}
+
+/*Background de livros*/
+.contain {
+    background-image: url(/images/livros.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 99vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Container sobre a formação*/
+.formacao {
+    background-color: rgb(174, 174, 174);
+    width: 70vw;
+    height: 70vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-top: 6vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+/*Título do container*/
+.formacao-box div {
+    width: 100%;
+    height: 8vw;
+    font-size: 33px;
+}
+
+/*Caixas contendo o conteúdo do container*/
+.formacao-box {
+    width: 33%;
+    height: fit-content;
+    margin: 3vw;
+    text-align: justify;
+}
+
+/*Definindo uma borda apenas na primeira caixa*/
+.formacao-box:first-child {
+    border-left: 5px solid black;
+    padding-left: 3vw;
+}
+
+/*Mundando a cor da data*/
+.form-box-span {
+    color: white;
+}
+
+/*Ajustando o texto do container*/
+.form-box-parag {
+    margin-top: 40px;
+    text-align: justify;
+}
+
+/*Modificando o título da segunda caixa*/
+#alpha {
+    text-align: left;
+}
+
+/*Container contendo os hobbies*/
+.hobbies {
+    background-color: rgb(174, 174, 174);
+    display: flex;
+    width: 99vw;
+    height: 80vh;
+    padding-left: 21.5vw;
+    padding-right: 18vw;
+    padding-top: 10vw;
+}
+
+/*Caixa contendo principal*/
+.box-hobbies {
+    width: 70vw;
+    height: 50vh;
+    border-left: 5px solid black;
+    padding-left: 3vw;
+}
+
+/*Título do container*/
+.hobbies h1 {
+    font-size: 40px;
+    width: fit-content;
+    height: 7vw;
+}
+
+/*Caixa contendo os ícones*/
+.caixa-hobbies {
+    width: 100%;
+    height: 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Caixa de cada ícone*/
+.caixa-hobbies div {
+    width: 15vw;
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/*Modificando o ícone da televisão*/
+#television {
+    width: 130px;
+    height: 130px;
+}
+
+/*Container de contato*/
+.contato {
+    background-color: rgb(121, 134, 133);
+    display: flex;
+    width: 100%;
+    height: 40vh;
+    padding-left: 21.5vw;
+    padding-right: 18vw;
+    padding-top: 3vw;
+    border-top: 7px solid black;
+}
+
+/*Título do container*/
+.contato h1 {
+    font-size: 40px;
+    width: fit-content;
+    height: 7vw;
+}
+
+/*Table do contato*/
+.contato article {
+    height: fit-content;
+    border-left: 5px solid black;
+    padding-left: 3vw;
+}
+
+/*Versão mobile*/
+@media only screen and (max-width: 800px) {
+
+    header {
+        text-align: center;
+        width: 100vw;
+    }
+
+    .perfil {
+        width: 15vh;
+        height: 15vh;
+        border: 7px solid rgb(174, 174, 174);
+        position: absolute;
+        top: 62vh;
+        left: calc(50% - 7.5vh);
+    }
+
+    .quem {
+        height: fit-content;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .quem-box {
+        width: 90%;
+    }
+
+    .quem .quem-box:last-child {
+        border-left: 5px solid black;
+        padding-left: 3vw;
+    }
+    
+
+    .contain {
+        height: fit-content;
+        width: 100vw;
+        padding: 80px;
+    }
+
+    .formacao {
+        height: fit-content;
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formacao-box div {
+        height: 8vh;
+    }
+
+    .formacao-box {
+        width: 80%;
+        text-align: justify;
+    }
+
+    .formacao-box:last-child {
+        border-left: 5px solid black;
+        padding-left: 3vw;
+    }
+
+    .hobbies {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .caixa-hobbies {
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+    }
+
+    .box-hobbies h1 {
+        height: 20vh;
+    }
+
+    .caixa-hobbies div {
+        width: 20vh;
+        height: 20vh;
+    }
+
+    .contato {
+        width: 100vw;
+        height: fit-content;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        padding-top: 3vw;
+    }
+
+    .contato h1 {
+        height: 13vh;
+    }
+
+    .contato article {
+        height: fit-content;
+        padding-left: 3vw;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+   
+
+
+
+}
